@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Young Rich V2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Young Rich V2 💹</h1>
+    <p>Staking exponentiel automatisé à 5 % par heure</p>
+    <button id="connectBtn">🔗 Connecter MetaMask</button>
+  </header>
+
+  <main>
+    <section id="infos">
+      <h2>📊 Vos données</h2>
+      <p><strong>Solde POL :</strong> <span id="userBalance">-</span></p>
+      <p><strong>Capital total (après intérêts) :</strong> <span id="totalCapital">-</span></p>
+      <p><strong>Réserve du contrat :</strong> <span id="contractReserve">-</span></p>
+    </section>
+
+    <section id="actions">
+      <h2>💰 Actions</h2>
+      <input type="number" id="amount" placeholder="Montant en POL" />
+      <button id="depositBtn">📥 Déposer</button>
+      <button id="withdrawBtn">📤 Retirer</button>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
